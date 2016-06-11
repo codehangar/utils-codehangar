@@ -25,6 +25,9 @@ require('./index.js')
 require('./index.routes.js')
 
 // JS COMPONENTS
+require('./services/uuid.service.js');
+require('./services/anon-id.service.js');
+require('./services/segment.service.js');
 require('./components/Footer/Footer.js');
 
 //JS VIEW CONTROLLERS

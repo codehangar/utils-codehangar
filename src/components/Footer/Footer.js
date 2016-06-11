@@ -30,7 +30,7 @@
         });
 
         analytics.track('email subscribe', {
-          source: 'stripe.codehangar',
+          source: 'utils.codehangar',
           email: email,
           position: 'page bottom'
         });

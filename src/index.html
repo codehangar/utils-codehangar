@@ -35,6 +35,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+    <!-- Segment Analytics -->
     <script type="text/javascript">
       !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
       analytics.load("78RGOCvUxccFFdR2EIj9wEUGt8qLSPqS");
@@ -42,24 +43,26 @@
       }}();
     </script>
 
-      <script>!function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"c808f13a-1628-11e6-aae8-0a7d6919297d"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});</script>
-      <script>
-  HS.beacon.config({
-    modal: true,
-    color: '#cacaca',
-    translation: {
-      searchLabel: 'En que podemos ayudarte?',
-      searchErrorLabel: 'Lo sentimos, hubo un error con tu busqueda'
-    },
-    topics: [
-      { val: 'need-help', label: 'Need help with the product' },
-      { val: 'bug', label: 'I think I found a bug'},
-      { val: 'suggestion', label: 'Suggestion for improvement'}
-    ],
-    attachment: true,
-    instructions:'Your feedback helps us improve ReQLPro. Use the form below to send us your thoughts.'
-  });
-</script>
+    <!-- HelpScout Script -->
+    <script>!function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"c808f13a-1628-11e6-aae8-0a7d6919297d"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});</script>
+    <!-- HelpScout Config -->
+    <script>
+      HS.beacon.config({
+        modal: true,
+        color: '#cacaca',
+        translation: {
+          searchLabel: 'En que podemos ayudarte?',
+          searchErrorLabel: 'Lo sentimos, hubo un error con tu busqueda'
+        },
+        topics: [
+          { val: 'need-help', label: 'Need help with the product' },
+          { val: 'bug', label: 'I think I found a bug'},
+          { val: 'suggestion', label: 'Suggestion for improvement'}
+        ],
+        attachment: true,
+        instructions:'Your feedback helps us improve ReQLPro. Use the form below to send us your thoughts.'
+      });
+    </script>
 
   </head>
 
