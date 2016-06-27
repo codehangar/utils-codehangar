@@ -49,8 +49,8 @@
           }
 
           // Capture Download Request
-          // $http.post('https://contact-form-api.herokuapp.com/api/v1/contact/reqlpro', {
-          $http.post('http://localhost:9000/api/v1/contact/reqlpro', {
+          $http.post('https://contact-form-api.herokuapp.com/api/v1/contact/reqlpro', {
+          // $http.post('http://localhost:9000/api/v1/contact/reqlpro', {
             email: vm.downloadEmail,
             segment: segmentPayload
           }).then(function(res) {
