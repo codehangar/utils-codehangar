@@ -5,9 +5,9 @@
     .module('utils.codehangar')
     .controller('RethinkCtrl', controller);
 
-  controller.$inject = ['$timeout', '$http', 'Segment', 'AnonId'];
+  controller.$inject = ['$timeout', '$http', 'Segment', 'AnonId', '$location', '$anchorScroll'];
 
-  function controller($timeout, $http, Segment, AnonId) {
+  function controller($timeout, $http, Segment, AnonId, $location, $anchorScroll) {
 
     var vm = this;
 
@@ -65,6 +65,15 @@
       }
 
     };
+
+    vm.scrollTo = function(anchor) {
+      // set the location.hash to the id of
+      // the element you wish to scroll to.
+      $location.hash(anchor);
+
+      // call $anchorScroll()
+      $anchorScroll();
+    }
 
     vm.downloadClick = function(group, link) {
       Segment.track('clicked download ReQLPro', {
