@@ -50,7 +50,7 @@
 
           // Capture Download Request
           $http.post('https://contact-form-api.herokuapp.com/api/v1/contact/reqlpro', {
-          // $http.post('http://localhost:9000/api/v1/contact/reqlpro', {
+            // $http.post('http://localhost:9000/api/v1/contact/reqlpro', {
             email: vm.downloadEmail,
             segment: segmentPayload
           }).then(function(res) {
@@ -68,6 +68,29 @@
 
     vm.init = function() {
       vm.downloadCTA = 'Get the Beta';
+
+      vm.downloads = [{
+        version: '0.0.3',
+        links: [{
+          platform: 'Mac OSX',
+          url: 'https://s3.amazonaws.com/reqlpro/ReQLPro_0.0.3.dmg'
+        }, {
+          platform: 'Windows 64 Bit',
+          url: 'https://s3.amazonaws.com/reqlpro/ReQLPro_0.0.3-win32-x64.zip'
+        }]
+      }, {
+        version: '0.0.2',
+        links: [{
+          platform: 'Mac OSX',
+          url: 'https://s3.amazonaws.com/reqlpro/ReQLPro_0.0.2.dmg'
+        }]
+      }, {
+        version: '0.0.1',
+        links: [{
+          platform: 'Mac OSX',
+          url: 'https://s3.amazonaws.com/reqlpro/ReQLPro_0.0.1.dmg'
+        }]
+      }]
     };
 
     vm.init();

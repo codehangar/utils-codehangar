@@ -8,24 +8,24 @@
         <div class="col-sm-8">
           <h1 class="text-center"><img src="images/reql-teal-bg.png" alt="ReQL Pro" style="max-width:500px; width:80%;"></h1>
           <p class="lead text-center">RethinkDB GUI tool for Mac OS X</p>
-          <form ng-submit="vm.download(downloadForm)" name="downloadForm" ng-hide="vm.showDownloadSuccess">
-          <div class="row">
-            <div class="col-sm-8">
+          <!-- <form ng-submit="vm.download(downloadForm)" name="downloadForm" ng-hide="vm.showDownloadSuccess"> -->
+          <!-- <div class="row"> -->
+          <!-- <div class="col-sm-8">
               <input class="form-control input-lg" type="email" name="email" ng-model="vm.downloadEmail" placeholder="email" required="" />
               <div ng-messages="downloadForm.$error" ng-show="downloadForm.$dirty">
                 <div ng-message="email">Enter your email</div>
                 <div ng-message="required">Enter your email</div>
               </div>
-            </div>
-            <div class="col-sm-4">
-              <button type="submit" class="btn btn-default btn-lg btn-block" ng-bind="::vm.downloadCTA"></button>
-            </div>
+            </div> -->
+          <div class="col-sm-4">
+            <a href="#downloads" class="btn btn-default btn-lg btn-block" ng-bind="::vm.downloadCTA"></a>
           </div>
-            
-          </form>
-          <div ng-show="vm.showDownloadSuccess">
+          <!-- </div> -->
+
+          <!-- </form> -->
+          <!-- <div ng-show="vm.showDownloadSuccess">
             <p class="alert alert-warning">Thank you! You will receive a download link in your email at {{vm.downloadEmail}}</p>
-          </div>
+          </div> -->
         </div>
         <div class="col-sm-4 text-center">
           <img src="images/reql-icon.png" alt="" style="width:80%;">
@@ -87,10 +87,6 @@
 
           <strong>Planned Features:</strong>
           <ul>
-            <li>Windows Support</li>
-            <li>Add and Remove Tables</li>
-            <li>Add and Remove Databases</li>
-            <li>Decrease App file size</li>
             <li>Advanced Searching</li>
             <li>Update tree view to be consistent with edit / update</li>
             <li>Add ability to traverse nested object trees in table view</li>
@@ -102,7 +98,7 @@
             <li>View and Update Indexes</li>
             <li>Add support for Auth Keys</li>
             <li>Add support for Users / Permissions</li>
-            <li>Query performance / Stats</li>
+            <li>Detailed Query performance / Stats</li>
           </ul>
 
           <strong>Bigger Ideas:</strong>
@@ -117,6 +113,33 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="container-fluid alt-container">
+  <div class="row" style="margin:60px 0;">
+    <div class="container" id="downloads">
+      <div class="col-sm-12">
+        <h2 class="text-center" style="margin-bottom: 60px;">Downloads</h2>
+        <div ng-repeat="group in vm.downloads">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <span>Version {{group.version}}</span>
+            </div>
+            <div class="panel-body">
+              <div ng-repeat="link in group.links">
+                <span ng-bind="link.platform"></span>
+                <a ng-href="{{link.url}}" target="_blank">
+                  <span>Download</span>
+                  <span class="fa fa-external-link"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- <hr> -->
