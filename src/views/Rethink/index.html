@@ -18,7 +18,7 @@
               </div>
             </div> -->
           <div class="col-sm-4">
-            <a href="#downloads" class="btn btn-default btn-lg btn-block" ng-bind="::vm.downloadCTA"></a>
+            <span ng-click="vm.scrollTo('downloads')" class="btn btn-default btn-lg btn-block" ng-bind="::vm.downloadCTA"></span>
           </div>
           <!-- </div> -->
 
@@ -110,6 +110,17 @@
           </ul>
 
         </div>
+
+
+        <div class="col-md-12">
+          <hr />
+          <p class="lead text-center">ReQLPro Changelog</p>
+
+          <p class="text-center">
+            Check out our blog to browse through the
+            <a href="http://codehangar.io/tag/reqlpro/">Release History</a> of ReQLPro and see how far we've come.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -128,7 +139,7 @@
             <div class="panel-body">
               <div ng-repeat="link in group.links">
                 <span ng-bind="link.platform"></span>
-                <a ng-href="{{link.url}}" target="_blank">
+                <a ng-href="{{link.url}}" ng-click="vm.downloadClick(group, link)" target="_blank">
                   <span>Download</span>
                   <span class="fa fa-external-link"></span>
                 </a>
