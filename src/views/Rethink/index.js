@@ -71,8 +71,9 @@
 
       vm.downloads = [{
         version: '0.0.3',
+        details: 'http://codehangar.io/reqlpro-003-windows-support-insert-edit/',
         links: [{
-          platform: 'Mac OSX',
+          platform: 'Mac OS X',
           url: 'https://s3.amazonaws.com/reqlpro/ReQLPro_0.0.3.dmg'
         }, {
           platform: 'Windows 64 Bit',
@@ -80,14 +81,16 @@
         }]
       }, {
         version: '0.0.2',
+        details: 'http://codehangar.io/reqlpro-version-0-0-2/',
         links: [{
-          platform: 'Mac OSX',
+          platform: 'Mac OS X',
           url: 'https://s3.amazonaws.com/reqlpro/ReQLPro_0.0.2.dmg'
         }]
       }, {
         version: '0.0.1',
+        details: 'http://codehangar.io/rethinkdb-data-management-made-easy-with-reqlpro-admin-gui/',
         links: [{
-          platform: 'Mac OSX',
+          platform: 'Mac OS X',
           url: 'https://s3.amazonaws.com/reqlpro/ReQLPro_0.0.1.dmg'
         }]
       }]
