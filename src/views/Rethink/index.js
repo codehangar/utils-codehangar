@@ -66,6 +66,14 @@
 
     };
 
+    vm.downloadClick = function(group, link) {
+      Segment.track('clicked download ReQLPro', {
+        "version": group.version,
+        "platform": link.platform,
+        "url": link.url
+      });
+    };
+
     vm.init = function() {
       vm.downloadCTA = 'Get the Beta';
 
