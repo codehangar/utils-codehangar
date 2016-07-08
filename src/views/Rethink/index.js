@@ -95,6 +95,9 @@
         }, {
           platform: 'Windows 64 Bit',
           url: 'https://s3.amazonaws.com/reqlpro/ReQLPro_0.0.3-win32-x64.zip'
+        }, {
+          platform: 'Linux 64 Bit',
+          url: 'https://s3.amazonaws.com/reqlpro/ReQLPro_0.0.3-linux-x64.zip'
         }]
       }, {
         version: '0.0.2',
