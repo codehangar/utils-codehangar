@@ -2,11 +2,12 @@
 <div ng-include="'components/Header-Utils/index.html'"></div>
 
 <div class="container-fluid reql-container2">
-  <div class="row" style="margin:60px 0;">
+  <div class="row" style="margin:20px 0;">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h1 class="text-center"><img src="images/reql-teal-bg.png" alt="ReQL Pro" style="max-width:500px; width:80%; margin:auto;"></h1>
+          <h1 class="text-center"><img src="images/reql-teal-bg.png" alt="ReQL Pro" style="max-width:400px; width:80%; margin:auto;"></h1>
+          <p class="lead">Help Center</p>
         </div>
       </div>
     </div>
@@ -16,54 +17,71 @@
 <div class="container">
   <div class="row" style="margin:40px 0;">
     <div class="col-md-12">
-      <h2 class="text-center">Help Center</h2>
-      <p class=" text-center">Thanks for checking out ReQLPro. Please shoot us a message if you have any questions, issues, or suggestions.</p>
-      <br>
-      <p class="lead text-center"><span class="btn btn-primary btn-lg" ng-click="openHS()">Contact Support</span></p>
+      <h2 class="">Welcome</h2>
+      <p class=" ">Welcome to the ReQLPro help center. Here you'll find articles and tutorials to help you get started with the ReQLPro platform. See something that's not documented here? Shoot us a message and we will add it.</p>
+      <!-- <br>
+      <p class="lead text-center"><span class="btn btn-primary btn-lg" ng-click="openHS()">Contact Support</span></p> -->
     </div>
   </div>
+</div>
+<div class="container-fluid reql-container">
+  <div class="row" style="margin:20px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6 text-center">
+            <div ng-click="openHS()" class="btn btn-default btn-lg btn-block" ng-bind="'Contact Support'"></div>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <!-- <hr/> -->
   <div class="row" style="margin:40px 0;">
     <!-- Getting Started -->
     <div class="col-md-12">
-      <h2 class="text-center">Getting Started</h2>
+      <h2 class="text-center">Getting Started Guide</h2>
     </div>
     <!-- Setup Section -->
     <div class="col-md-12">
       <h3>Setup</h3>
-      <p class="lead">To get started you will need to <a>download</a> the app. Once downloaded and installed simply launch the application! When you launch the application you will be greeted with the screen below.</p>
-      <img src="images/reqlpro-start.png" alt="ReQL Pro Launched" style="width:100%; margin:auto;">
+      <p class="lead">To get started with ReQLPro, <a>download</a>, install, and launch the application. When you launch the application you will be greeted with the screen below.</p>
+      <!-- <img src="images/reqlpro-start.png" alt="ReQL Pro Launched" style="width:100%; margin:auto;"> -->
     </div>
     <!-- End Setup Section -->
     <!-- Connections Section -->
     <div class="col-md-12">
       <h3>Connections</h3>
-      <p class="lead">ReQL Pro gives you a way to manage multiple database connections. In this section lets go over adding, editing, and deleting connections.</p>
+      <p class="lead">ReQL Pro gives you a way to manage multiple database connections. In this section we will go over adding, editing, and deleting connections.</p>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <h4>Add Connection</h4>
           <p>Click the "+" button in the bottom left corner of the application. A form will appear (as shown on right) with fields for name, host, and port. Upon filling out these form elements just click the add connection button. Success! You added your first RethinkDB connection.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
           <img src="images/reqlpro-connection-form.png" alt="ReQL Pro Launched" style="width:100%; margin:auto;">
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <h4>Edit Connection</h4>
           <p>Now that you have a connection setup we can edit details of that connection whenever we need too. Click the pencil icon to the right of the name of your connection in the center column. Make any edits nesseccary then click the "Edit Connection" button.</p>
         </div>
-        <div class="col-md-6">
+        <!-- <div class="col-md-12">
           <img src="images/reqlpro-edit-connection.png" alt="ReQL Pro Launched" style="width:100%; margin:auto;">
-        </div>
+        </div> -->
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <h4>Toggle Connections</h4>
           <p>Once you have multiple connections setup you can quickly toggle between them by clicking on them in the very left column in the app.</p>
         </div>
-        <div class="col-md-6">
+        <!-- <div class="col-md-12">
           <img src="images/reqlpro-toggle-connections.png" alt="ReQL Pro Launched" style="width:100%; margin:auto;">
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- End Connections Section -->
@@ -72,29 +90,29 @@
       <h3>Manage Data</h3>
       <p class="lead">Okay lets manage some data! In this section we will go over inserting/updating/deleting records, toggling between data visualizations, and using pagination.</p>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <h4>Inserting Records</h4>
           <p>To insert records into a table have a table selected from the middle column of the application. Then in the left top navigation click the "+" button. This will give you a text editor where you can construct JSON objects to insert into the table.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
           <img src="images/reqlpro-insert-record.png" alt="ReQL Pro Launched" style="width:100%; margin:auto;">
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <h4>Updating Records</h4>
           <p>On the table view layout you can use the pencil icon to update an existing record. You will find the update view interface familiar if you have inserted a record before.</p>
         </div>
-        <div class="col-md-6">
+        <!-- <div class="col-md-12">
           <img src="images/reqlpro-delete-record.png" alt="ReQL Pro Launched" style="width:100%; margin:auto;">
-        </div>
+        </div> -->
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <h4>Deleting Records</h4>
           <p>On the tableview layout. You can use the garbage can icon to remove the record.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
           <img src="images/reqlpro-delete-record.png" alt="ReQL Pro Launched" style="width:100%; margin:auto;">
         </div>
       </div>
@@ -105,20 +123,34 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <p class="text-center"><strong>Tree View</strong></p>
+        <div class="col-md-12">
+          <p class=""><strong>Tree View</strong></p>
           <img src="images/reqlpro-treeview.png" alt="ReQL Pro Launched" style="width:100%; margin:auto;">
-          <p class="text-center">The tree views main benefit is for exploring deeply nested records.</p>
+          <p class="">The tree views main benefit is for exploring deeply nested records.</p>
         </div>
-        <div class="col-md-6">
-          <p class="text-center"><strong>Datatable View</strong></p>
+        <div class="col-md-12">
+          <p class=""><strong>Datatable View</strong></p>
           <img src="images/reqlpro-tableview.png" alt="ReQL Pro Launched" style="width:100%; margin:auto;">
-          <p class="text-center">The datatable view has multiple benefits. This view gives you the action buttons to edit and delete records. It also allows for quick inline edits of certain field types. It also provides a traditional database feel.</p>
+          <p class="">The datatable view has multiple benefits. This view gives you the action buttons to edit and delete records. It also allows for quick inline edits of certain field types. It also provides a traditional database feel.</p>
         </div>
       </div>
     </div>
     <!-- End Manage Data Section -->
     <!-- End Getting Started -->
+  </div>
+</div>
+<div class="container-fluid reql-container">
+  <div class="row" style="margin:20px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6 text-center">
+            <div ng-click="openHS()" class="btn btn-default btn-lg btn-block" ng-bind="'Contact Support'"></div>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
   </div>
 </div>
 <!-- <hr/> -->
